@@ -9,6 +9,7 @@ class Shoe
     @brand = brand
     if BRANDS.length == 0
       BRANDS << @brand
+    end
   end
 
   def cobble
