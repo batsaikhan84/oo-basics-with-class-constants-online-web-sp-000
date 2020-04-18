@@ -9,6 +9,8 @@ class Shoe
     @brand = brand
     if BRANDS.length == 0
       BRANDS << @brand
+    elsif BRANDS[BRANDS.length-1] != @brand
+      BRANDS << @brand
     end
   end
 
