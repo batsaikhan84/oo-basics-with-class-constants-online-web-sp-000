@@ -7,7 +7,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.detect {|element| element != brand} 
+    BRANDS.uniq 
     BRANDS << brand
   end
 
