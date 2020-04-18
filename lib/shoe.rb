@@ -7,11 +7,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each do |element|
-      if element != @brand
-        BRANDS << @brand
-      end
-    end
+    BRANDS << @brand
+    BRANDS.uniq
   end
 
   def cobble
