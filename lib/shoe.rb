@@ -7,8 +7,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.detect {|element| element == @brand} 
-    BRANDS << @brand
+    BRANDS.detect {|element| element != brand} 
+    BRANDS << brand
   end
 
   def cobble
